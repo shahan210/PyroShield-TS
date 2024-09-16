@@ -31,10 +31,18 @@ const Navbar: React.FC = () => {
               <a href="https://www.linkedin.com/company/pyroshields/" target="blank" className="navbar__linkedin">
                 <FaLinkedin className="icon" />
               </a>
-              <a href="https://www.instagram.com/pyroshields?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank" className="navbar__instagram">
+              <a
+                href="https://www.instagram.com/pyroshields?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="blank"
+                className="navbar__instagram"
+              >
                 <FaInstagram className="icon" />
               </a>
-              <a href="https://www.facebook.com/p/Pyroshields-Fire-Safety-sps-llc-61557531213838/" target="blank" className="navbar__facebook">
+              <a
+                href="https://www.facebook.com/p/Pyroshields-Fire-Safety-sps-llc-61557531213838/"
+                target="blank"
+                className="navbar__facebook"
+              >
                 <FaFacebookF className="icon" />
               </a>
             </div>

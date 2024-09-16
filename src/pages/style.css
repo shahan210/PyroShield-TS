@@ -1,0 +1,24 @@
+.Swiper {
+  @apply w-full h-[700px] overflow-hidden relative mb-10;
+}
+.Swiper__menu {
+  @apply absolute p-2 flex justify-between w-full z-50 h-fit bg-gradient-to-b from-slate-950 items-center;
+}
+.Swiper__logo {
+  @apply ml-32 w-[25%];
+}
+.Swiper__nav {
+  @apply flex gap-10 mr-20 text-white;
+}
+.Swiper__nav a {
+  @apply text-base hover:text-[#ED1C24] transition-all ease-in-out duration-150 hover:scale-105;
+}
+.Swiper__text {
+  @apply absolute top-[30%] left-[25%] h-full text-gray-100 z-[100] w-[50%];
+}
+.Swiper__title {
+  @apply text-8xl font-bold;
+}
+.Swiper__subtitle {
+  @apply mt-4 text-3xl font-semibold flex items-center gap-2;
+}
