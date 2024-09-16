@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
             <div className="navbar__heading">
               <IoCall className="navbar__icon" />
               {/* <span>Call Us</span> */}
-              <p className="navbar__subtext">+971 545 418 559, +971 6 678 5591</p>
+              <p className="navbar__subtext">+971 54 541 8559, +971 6678 5591</p>
             </div>
           </div>
           <div className="navbar__text">
@@ -28,15 +28,15 @@ const Navbar: React.FC = () => {
           </div>
           <div className="navbar__text_">
             <div className="navbar__heading_media">
-              <div className="navbar__linkedin">
+              <a href="https://www.linkedin.com/company/pyroshields/" target="blank" className="navbar__linkedin">
                 <FaLinkedin className="icon" />
-              </div>
-              <div className="navbar__instagram">
+              </a>
+              <a href="https://www.instagram.com/pyroshields?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="blank" className="navbar__instagram">
                 <FaInstagram className="icon" />
-              </div>
-              <div className="navbar__facebook">
+              </a>
+              <a href="https://www.facebook.com/p/Pyroshields-Fire-Safety-sps-llc-61557531213838/" target="blank" className="navbar__facebook">
                 <FaFacebookF className="icon" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
