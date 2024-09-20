@@ -1,3 +1,6 @@
+.animate {
+  @apply transition-all ease-in-out duration-150 delay-75;
+}
 .Swiper {
   @apply w-full h-[700px] overflow-hidden relative mb-10;
 }
@@ -21,4 +24,40 @@
 }
 .Swiper__subtitle {
   @apply mt-4 text-3xl font-semibold flex items-center gap-2;
+}
+.home__contents {
+  @apply my-20 w-[70%] mx-auto;
+}
+.sideheading {
+  @apply uppercase text-sm underline-offset-8 underline text-[#ED1C24];
+}
+.about__content {
+  @apply grid grid-cols-2 gap-10 my-10;
+}
+.about__left {
+  @apply flex flex-col gap-5;
+}
+.about__title {
+  @apply text-2xl font-semibold;
+}
+.about__description {
+  @apply text-base text-gray-500;
+}
+.about__button {
+  @apply flex justify-start gap-5;
+}
+.btn-about {
+  @apply px-8 py-4 bg-[#ED1C24] text-white border border-[#ED1C24] text-base rounded hover:bg-red-500 animate;
+}
+.btn-contact {
+  @apply px-8 py-4 bg-white text-[#ED1C24] text-base rounded border border-[#ED1C24] hover:bg-[#ED1C24] hover:text-white animate;
+}
+.about__right {
+  @apply flex justify-center items-center;
+}
+.about__img {
+  @apply w-full h-fit rounded-lg hover:shadow-xl transition-all ease-in-out duration-150 overflow-hidden;
+}
+.about__img img{
+  @apply rounded-lg cursor-pointer
 }

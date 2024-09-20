@@ -44,7 +44,7 @@ const Carousel: React.FC = () => {
             </p>{" "}
           </motion.div>
           <motion.img
-            loading="lazy"
+            // loading="lazy"
             whileInView={{ scale: [1.1, 1] }}
             transition={{ duration: 2 }}
             src={SwiperImage1}
@@ -62,7 +62,7 @@ const Carousel: React.FC = () => {
             </p>{" "}
           </motion.div>
           <motion.img
-            loading="lazy"
+            // loading="lazy"
             whileInView={{ scale: [1.1, 1] }}
             transition={{ duration: 2 }}
             src={SwiperImage2}
@@ -80,7 +80,7 @@ const Carousel: React.FC = () => {
             </p>{" "}
           </motion.div>
           <motion.img
-            loading="lazy"
+            // loading="lazy"
             whileInView={{ scale: [1.1, 1] }}
             transition={{ duration: 2 }}
             src={SwiperImage3}

@@ -1,5 +1,8 @@
+.animate {
+  @apply transition-all ease-in-out duration-150;
+}
 .navbar {
-  @apply opacity-95 text-black p-2;
+  @apply opacity-95 text-black p-2 bg-blue-950;
 }
 .navbar__left {
   @apply flex justify-between items-center;
@@ -17,22 +20,22 @@
   @apply size-8 text-red-600;
 }
 .navbar__subtext {
-  @apply text-[#666666] text-base px-2;
+  @apply text-white text-base px-2;
 }
 .navbar__right {
   @apply flex gap-10 items-center;
 }
 .icon {
-  @apply size-6 ;
+  @apply size-6;
 }
 .navbar__linkedin {
-  @apply p-2 border border-black rounded-lg hover:text-white cursor-pointer text-black hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all ease-in-out duration-150;
+  @apply p-2 border border-white rounded-lg hover:text-white cursor-pointer text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] animate;
 }
 .navbar__instagram {
-  @apply p-2 border border-black rounded-xl cursor-pointer hover:text-white text-black hover:bg-[#F41F29] hover:border-[#F41F29]  transition-all ease-in-out duration-150;
+  @apply p-2 border border-white rounded-xl cursor-pointer hover:text-white text-white hover:bg-[#F41F29] hover:border-[#F41F29] animate;
 }
 .navbar__facebook {
-  @apply p-2 border border-black rounded-xl cursor-pointer hover:text-white text-black hover:bg-[#0A66C2] hover:border-[#0A66C2] transition-all ease-in-out duration-150;
+  @apply p-2 border border-white rounded-xl cursor-pointer hover:text-white text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] animate;
 }
 .navbar__heading_media {
   @apply flex gap-5 items-center mr-10;
