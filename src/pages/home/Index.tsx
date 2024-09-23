@@ -4,6 +4,7 @@ import "./style.css";
 import Carousel from "./components/Carousel";
 import About from "./components/About";
 import Services from "./components/Services";
+import Quality from "./components/Quality";
 const Index: React.FC = () => {
   return (
     <div className="">
@@ -12,6 +13,7 @@ const Index: React.FC = () => {
         <About />
         <Services />
       </div>
+        <Quality />
     </div>
   );
 };
