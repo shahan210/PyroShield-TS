@@ -28,6 +28,9 @@
 .home__contents {
   @apply my-20 w-[70%] mx-auto;
 }
+.home__about {
+  @apply my-20;
+}
 .sideheading {
   @apply uppercase text-sm underline-offset-8 underline text-[#ED1C24];
 }
@@ -58,6 +61,22 @@
 .about__img {
   @apply w-full h-fit rounded-lg hover:shadow-xl transition-all ease-in-out duration-150 overflow-hidden;
 }
-.about__img img{
-  @apply rounded-lg cursor-pointer
+.about__img img {
+  @apply rounded-lg cursor-pointer;
+}
+
+.home__services {
+  @apply mt-32;
+}
+.services__content{
+  @apply grid grid-cols-3 gap-10 ;
+}
+.services__card{
+  @apply  bg-white mt-10 rounded-lg hover:shadow-xl overflow-hidden relative;
+}
+.services__img{
+  @apply w-full h-[300px] object-cover cursor-pointer;
+}
+.services__title{
+  @apply p-2 text-sm font-semibold absolute bottom-0 text-center bg-black bg-opacity-40 w-full text-white ;
 }

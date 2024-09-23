@@ -2,9 +2,9 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import SwiperImage1 from "../../../assets/images/3d-rendering-gas-cylinder.jpg";
-import SwiperImage2 from "../../../assets/images/male-firefighter-station-equipped-with-suit-safety-helmet.jpg";
-import SwiperImage3 from "../../../assets/images/pexels-anna-shvets-5964979.jpg";
+import SwiperImage1 from "../../../assets/Webp/3d-rendering-gas-cylinder.webp";
+import SwiperImage2 from "../../../assets/Webp/male-firefighter-station-equipped-with-suit-safety-helmet.webp";
+import SwiperImage3 from "../../../assets/Webp/pexels-anna-shvets-5964979.webp";
 import { motion } from "framer-motion";
 import Logo from "../../../assets/images/pyroshield.png";
 const Carousel: React.FC = () => {
