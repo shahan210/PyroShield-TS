@@ -1,0 +1,109 @@
+.animate {
+  @apply transition-all ease-in-out duration-200 delay-75;
+}
+.Swiper {
+  @apply w-full h-[700px] overflow-hidden relative mb-10;
+}
+.Swiper__menu {
+  @apply absolute p-2 flex justify-between w-full z-50 h-fit bg-gradient-to-b from-slate-950 items-center;
+}
+.Swiper__logo {
+  @apply ml-32 w-[25%];
+}
+.Swiper__nav {
+  @apply flex gap-10 mr-20 text-white;
+}
+.Swiper__nav a {
+  @apply text-base hover:text-[#ED1C24] transition-all ease-in-out duration-150 hover:scale-105;
+}
+.Swiper__text {
+  @apply absolute top-[30%] left-[25%] h-full text-gray-100 z-[100] w-[50%];
+}
+.Swiper__title {
+  @apply text-8xl font-bold;
+}
+.Swiper__subtitle {
+  @apply mt-4 text-3xl font-semibold flex items-center gap-2;
+}
+.home__contents {
+  @apply my-20 w-[75%] mx-auto;
+}
+.home__about {
+  @apply my-20;
+}
+.sideheading {
+  @apply uppercase text-sm underline-offset-8 underline text-[#ED1C24];
+}
+.about__content {
+  @apply grid grid-cols-2 gap-10 my-10;
+}
+.about__left {
+  @apply flex flex-col gap-5;
+}
+.about__title {
+  @apply text-2xl font-semibold;
+}
+.about__description {
+  @apply text-base text-gray-500;
+}
+.about__button {
+  @apply flex justify-start gap-5;
+}
+.btn-about {
+  @apply px-8 py-4 bg-[#ED1C24] text-white border border-[#ED1C24] text-base rounded hover:bg-red-500 animate;
+}
+.btn-contact {
+  @apply px-8 py-4 bg-white text-[#ED1C24] text-base rounded border border-[#ED1C24] hover:bg-[#ED1C24] hover:text-white animate;
+}
+.about__right {
+  @apply flex justify-center items-center;
+}
+.about__img {
+  @apply w-full h-fit rounded-lg hover:shadow-xl transition-all ease-in-out duration-150 overflow-hidden;
+}
+.about__img img {
+  @apply rounded-lg cursor-pointer;
+}
+
+.home__services {
+  @apply mt-32;
+}
+.services__content {
+  @apply grid grid-cols-3 gap-10;
+}
+.services__card {
+  @apply bg-white mt-10 rounded-lg hover:shadow-xl overflow-hidden relative;
+}
+.services__img {
+  @apply w-full h-[300px] object-cover cursor-pointer;
+}
+.services__title {
+  @apply p-2 text-sm font-semibold absolute bottom-0 text-center bg-black bg-opacity-40 w-full text-white;
+}
+.home__quality {
+  @apply bg-gray-100 my-20 flex justify-center;
+}
+.quality__container {
+  @apply max-w-[75%] mt-20;
+}
+.quality__content {
+  @apply grid grid-cols-2 mt-10 gap-10;
+}
+.quality__subtitle {
+  @apply text-xl font-semibold;
+}
+.quality__left {
+  @apply flex justify-start flex-col gap-8 flex-wrap;
+}
+.quality__description {
+  @apply text-base text-gray-500 text-wrap;
+}
+.quality__button {
+  @apply px-8 py-4 bg-[#ED1C24] text-white  border border-[#ED1C24] text-base rounded hover:bg-white hover:text-[#ED1C24] hover:scale-105 animate w-fit mb-24;
+}
+.quality__right {
+  @apply grid grid-cols-2 gap-5 p-2 ;
+}
+.quality__right img {
+  @apply w-full h-full object-cover rounded-lg items-center;
+}
