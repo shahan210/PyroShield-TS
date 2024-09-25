@@ -5,12 +5,17 @@ import Card from "./Card";
 const Services: React.FC = () => {
   return (
     <div className="home__services">
-      <h3 className="sideheading text-center">Services</h3>
+      <h3 className="sideheading text-center mb-5">Services</h3>
       <div className="services__content">
-        {services.map((service) => {
-          return <Card key={service.id} image={service.Image} desc={service.Desc} />;
-        })}
+        {services != undefined &&
+          services.length > 0 &&
+          services.map((service) => {
+            return <Card key={service.id} image={service.Image} desc={service.Desc} />;
+          })}
       </div>
+      <a href="#services" className="service__more">
+        <button>More Services</button>
+      </a>
     </div>
   );
 };

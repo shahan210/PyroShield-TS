@@ -28,7 +28,6 @@ const Carousel: React.FC = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        navigation={true}
         loop={true}
         modules={[Autoplay]}
         className="mySwiper"
@@ -68,7 +67,7 @@ const Carousel: React.FC = () => {
             src={SwiperImage2}
             alt="Image2"
           />
-        </SwiperSlide>
+        </SwiperSlide>{" "}
         <SwiperSlide>
           <motion.div whileInView={{ opacity: [0.5, 1] }} transition={{ duration: 1 }} className="Swiper__text">
             <h3 className="Swiper__title">

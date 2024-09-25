@@ -102,8 +102,14 @@
   @apply px-8 py-4 bg-[#ED1C24] text-white  border border-[#ED1C24] text-base rounded hover:bg-white hover:text-[#ED1C24] hover:scale-105 animate w-fit mb-24;
 }
 .quality__right {
-  @apply grid grid-cols-2 gap-5 p-2 ;
+  @apply grid grid-cols-2 gap-5 p-2;
 }
 .quality__right img {
   @apply w-full h-full object-cover rounded-lg items-center;
+}
+.service__more {
+  @apply flex justify-center items-center p-2 mt-5;
+}
+.service__more button {
+  @apply px-8 py-4 mt-5 bg-white text-[#ED1C24] text-base rounded border border-[#ED1C24] hover:bg-[#ED1C24] hover:text-white animate;
 }
