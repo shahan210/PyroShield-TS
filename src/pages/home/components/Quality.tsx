@@ -7,13 +7,13 @@ import Image4 from "../../../assets/Webp/fire1.webp";
 
 const Quality: React.FC = () => {
   return (
-    <div className="home__quality">
+    <section className="home__quality">
       <div className="quality__container">
         <h3 className="sideheading ">Quality</h3>
         <div className="quality__content">
           <div className="quality__left">
             <h1 className="about__title !text-4xl">
-              Building the future
+              Building the future,
               <br /> Restoring the past.
             </h1>{" "}
             <h2 className="quality__subtitle">Fire and Safety Company in Ajman</h2>
@@ -35,7 +35,7 @@ const Quality: React.FC = () => {
           <button className="quality__button">Read More</button>
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 

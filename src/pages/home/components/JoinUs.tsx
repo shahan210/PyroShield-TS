@@ -3,7 +3,7 @@ import "../style.css";
 import JoinImage from "../../../assets/Webp/professional.webp";
 const JoinUs: React.FC = () => {
   return (
-    <div className="home__join">
+    <section className="home__join">
       <div className="join__content">
         <div className="join__left">
           <h3 className="sideheading">Join Us</h3>
@@ -22,7 +22,7 @@ const JoinUs: React.FC = () => {
           <img src={JoinImage} alt="" />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

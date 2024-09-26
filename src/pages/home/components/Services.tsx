@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const Services: React.FC = () => {
   return (
-    <div className="home__services">
+    <section className="home__services">
       <h3 className="sideheading text-center mb-5">Services</h3>
       <div className="services__content">
         {services != undefined &&
@@ -16,7 +16,7 @@ const Services: React.FC = () => {
       <a href="#services" className="service__more">
         <button>More Services</button>
       </a>
-    </div>
+    </section>
   );
 };
 

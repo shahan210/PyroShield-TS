@@ -2,12 +2,12 @@ import AboutImage from "../../../assets/images/g9.jpg";
 import { motion } from "framer-motion";
 const About: React.FC = () => {
   return (
-    <div className="home__about">
+    <section className="home__about">
       <h3 className="sideheading">About</h3>
       <div className="about__content">
         <div className="about__left">
           <h1 className="about__title">
-            Best fire Extinguisher
+            Best Fire Extinguisher
             <br /> Supplier In Ajman
           </h1>
           <p className="about__description">
@@ -40,7 +40,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

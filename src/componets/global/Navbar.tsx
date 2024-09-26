@@ -8,7 +8,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 const Navbar: React.FC = () => {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="navbar__left">
         <img src={PyroLogo} />
         <div className="navbar__right">
@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

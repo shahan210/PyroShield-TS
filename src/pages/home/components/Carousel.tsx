@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import Logo from "../../../assets/images/pyroshield.png";
 const Carousel: React.FC = () => {
   return (
-    <div className="Swiper">
+    <section className="Swiper">
       <div className="Swiper__menu">
         <div className="Swiper__logo">
           <img src={Logo} alt="Pyroshield" />
@@ -87,7 +87,7 @@ const Carousel: React.FC = () => {
           />
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
 
