@@ -3,7 +3,7 @@ import React from "react";
 import "./style.css";
 import Carousel from "./components/Carousel";
 import About from "./components/About";
-import Services from "./components/Services";
+// import Services from "./components/Services";
 import Quality from "./components/Quality";
 import JoinUs from "./components/JoinUs";
 const Index: React.FC = () => {
@@ -12,7 +12,7 @@ const Index: React.FC = () => {
       <Carousel />
       <div className="home__contents">
         <About />
-        <Services />
+        {/* <Services /> */}
       </div>
       <Quality />
       <JoinUs />

@@ -33,7 +33,7 @@ const Carousel: React.FC = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <motion.div whileInView={{ opacity: [0.5, 1] }} transition={{ duration: 2 }} className="Swiper__text">
+          <div  className="Swiper__text">
             <h3 className="Swiper__title">
               Latest Fire <br /> Safety Measures
             </h3>
@@ -41,7 +41,7 @@ const Carousel: React.FC = () => {
               <hr className="w-20 border-2 " />
               To Ensure Safety.
             </p>{" "}
-          </motion.div>
+          </div>
           <motion.img
             // loading="lazy"
             whileInView={{ scale: [1.1, 1] }}
@@ -51,7 +51,7 @@ const Carousel: React.FC = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <motion.div whileInView={{ opacity: [0.5, 1] }} transition={{ duration: 1 }} className="Swiper__text">
+          <div  className="Swiper__text">
             <h3 className="Swiper__title">
               Skilled Labors <br /> and Expert Team
             </h3>
@@ -59,7 +59,7 @@ const Carousel: React.FC = () => {
               <hr className="w-20 border-2 " />
               To Ensure Safety.
             </p>{" "}
-          </motion.div>
+          </div>
           <motion.img
             // loading="lazy"
             whileInView={{ scale: [1.1, 1] }}
@@ -69,7 +69,7 @@ const Carousel: React.FC = () => {
           />
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <motion.div whileInView={{ opacity: [0.5, 1] }} transition={{ duration: 1 }} className="Swiper__text">
+          <div  className="Swiper__text">
             <h3 className="Swiper__title">
               Regular <br /> Maintenance
             </h3>
@@ -77,7 +77,7 @@ const Carousel: React.FC = () => {
               <hr className="w-20 border-2 " />
               To Ensure Safety.
             </p>{" "}
-          </motion.div>
+          </div>
           <motion.img
             // loading="lazy"
             whileInView={{ scale: [1.1, 1] }}

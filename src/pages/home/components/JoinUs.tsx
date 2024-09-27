@@ -1,9 +1,15 @@
 import React from "react";
 import "../style.css";
 import JoinImage from "../../../assets/Webp/professional.webp";
+import { motion } from "framer-motion";
 const JoinUs: React.FC = () => {
   return (
-    <section className="home__join">
+    <motion.section
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 2 }}
+      className="home__join"
+    >
       <div className="join__content">
         <div className="join__left">
           <h3 className="sideheading">Join Us</h3>
@@ -22,7 +28,7 @@ const JoinUs: React.FC = () => {
           <img src={JoinImage} alt="" />
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
