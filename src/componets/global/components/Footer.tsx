@@ -1,9 +1,9 @@
 import React from "react";
-import "./style.css";
-import About from "./components/About";
-import Links from "./components/Links";
-import Services from "./components/Services";
-import FollowUs from "./components/FollowUs";
+import "../style.css";
+import About from "../components/About";  
+import Links from "../components/Links";
+import Services from "../components/Services";
+import FollowUs from "../components/FollowUs";
 const Footer: React.FC = () => {
   return (
     <footer className="footer">

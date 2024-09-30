@@ -2,11 +2,10 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-import SwiperImage1 from "../../../assets/Webp/3d-rendering-gas-cylinder.webp";
-import SwiperImage2 from "../../../assets/Webp/male-firefighter-station-equipped-with-suit-safety-helmet.webp";
-import SwiperImage3 from "../../../assets/Webp/pexels-anna-shvets-5964979.webp";
 import { motion } from "framer-motion";
 import Logo from "../../../assets/images/pyroshield.png";
+const baseUrl = import.meta.env.VITE_IMAGE_URL;
+
 const Carousel: React.FC = () => {
   return (
     <section className="Swiper">
@@ -28,12 +27,11 @@ const Carousel: React.FC = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        loop={true}
         modules={[Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <div  className="Swiper__text">
+          <div className="Swiper__text">
             <h3 className="Swiper__title">
               Latest Fire <br /> Safety Measures
             </h3>
@@ -43,15 +41,15 @@ const Carousel: React.FC = () => {
             </p>{" "}
           </div>
           <motion.img
-            // loading="lazy"
+            loading="lazy"
             whileInView={{ scale: [1.1, 1] }}
             transition={{ duration: 2 }}
-            src={SwiperImage1}
+            src={`${baseUrl}3d-rendering-gas-cylinder.webp`}
             alt="Image1"
           />
         </SwiperSlide>
         <SwiperSlide>
-          <div  className="Swiper__text">
+          <div className="Swiper__text">
             <h3 className="Swiper__title">
               Skilled Labors <br /> and Expert Team
             </h3>
@@ -61,15 +59,15 @@ const Carousel: React.FC = () => {
             </p>{" "}
           </div>
           <motion.img
-            // loading="lazy"
+            loading="lazy"
             whileInView={{ scale: [1.1, 1] }}
             transition={{ duration: 2 }}
-            src={SwiperImage2}
+            src={`${baseUrl}male-firefighter-station-equipped-with-suit-safety-helmet.webp`}
             alt="Image2"
           />
         </SwiperSlide>{" "}
         <SwiperSlide>
-          <div  className="Swiper__text">
+          <div className="Swiper__text">
             <h3 className="Swiper__title">
               Regular <br /> Maintenance
             </h3>
@@ -79,10 +77,10 @@ const Carousel: React.FC = () => {
             </p>{" "}
           </div>
           <motion.img
-            // loading="lazy"
+            loading="lazy"
             whileInView={{ scale: [1.1, 1] }}
             transition={{ duration: 2 }}
-            src={SwiperImage3}
+            src={`${baseUrl}pexels-anna-shvets-5964979.webp`}
             alt="Image3"
           />
         </SwiperSlide>

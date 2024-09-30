@@ -1,6 +1,6 @@
 import React from "react";
-import PyroLogo from "../../assets/images/favicon.png";
-import "./style.css";
+import PyroLogo from "../../../assets/images/favicon.png";
+import "../style.css";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";

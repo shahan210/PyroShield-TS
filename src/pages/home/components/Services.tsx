@@ -2,6 +2,7 @@ import "../style.css";
 import { services } from "../../../constants/Index";
 import Card from "./Card";
 import { motion } from "framer-motion";
+
 const Services: React.FC = () => {
   return (
     <motion.section

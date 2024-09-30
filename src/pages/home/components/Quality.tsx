@@ -1,10 +1,12 @@
 import React from "react";
 import "../style.css";
-import Image1 from "../../../assets/Webp/g9.webp";
-import Image2 from "../../../assets/Webp/fire-alarm-switch.webp";
-import Image3 from "../../../assets/Webp/fire3.webp";
-import Image4 from "../../../assets/Webp/fire1.webp";
+// import Image1 from "../../../assets/Webp/g9.webp";
+// import Image2 from "../../../assets/Webp/fire-alarm-switch.webp";
+// import Image3 from "../../../assets/Webp/fire3.webp";
+// import Image4 from "../../../assets/Webp/fire1.webp";
 import { motion } from "framer-motion";
+const baseUrl = import.meta.env.VITE_IMAGE_URL;
+
 const Quality: React.FC = () => {
   return (
     <section className="home__quality">
@@ -35,10 +37,10 @@ const Quality: React.FC = () => {
             transition={{ duration: 2 }}
             className="quality__right"
           >
-            <img src={Image1} alt="Fire fighter" />
-            <img src={Image2} alt="Fire-switch" />
-            <img src={Image3} alt="Fire fighting" />
-            <img src={Image4} alt="Fire extinghuisher" />
+            <img src={`${baseUrl}g9.webp`} alt="Fire fighter" />
+            <img src={`${baseUrl}fire-alarm-switch.webp`} alt="Fire-switch" />
+            <img src={`${baseUrl}fire3.webp`} alt="Fire fighting" />
+            <img src={`${baseUrl}fire1.webp`} alt="Fire extinghuisher" />
           </motion.div>
         </div>
         <a href="">

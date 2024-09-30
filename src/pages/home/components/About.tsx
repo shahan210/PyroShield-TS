@@ -1,6 +1,9 @@
-import AboutImage from "../../../assets/images/g9.jpg";
 import { motion } from "framer-motion";
+const baseUrl = import.meta.env.VITE_IMAGE_URL;
+
 const About: React.FC = () => {
+  console.log(baseUrl);
+  
   return (
     <section className="home__about">
       <h3 className="sideheading">About</h3>
@@ -45,7 +48,8 @@ const About: React.FC = () => {
               whileHover={{ scale: [1, 1.1] }}
               initial={{ scale: 1 }}
               transition={{ duration: 2 }}
-              src={AboutImage}
+              
+              src={`${baseUrl}g9.webp`}
               alt="Fire Fighter"
             />
           </div>
