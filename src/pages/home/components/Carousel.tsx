@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+
 import "swiper/css";
 import { motion } from "framer-motion";
 import Logo from "../../../assets/images/pyroshield.png";
@@ -27,6 +28,7 @@ const Carousel: React.FC = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
+        loop={true}
         modules={[Autoplay]}
         className="mySwiper"
       >
@@ -40,13 +42,15 @@ const Carousel: React.FC = () => {
               To Ensure Safety.
             </p>{" "}
           </div>
-          <motion.img
-            loading="lazy"
-            whileInView={{ scale: [1.1, 1] }}
-            transition={{ duration: 2 }}
-            src={`${baseUrl}3d-rendering-gas-cylinder.webp`}
-            alt="Image1"
-          />
+          <div className="h-full overflow-hidden">
+            <motion.img
+              loading="lazy"
+              whileInView={{ scale: [1.1, 1] }}
+              transition={{ duration: 2 }}
+              src={`${baseUrl}3d-rendering-gas-cylinder.webp`}
+              alt="Image1"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="Swiper__text">
@@ -58,13 +62,15 @@ const Carousel: React.FC = () => {
               To Ensure Safety.
             </p>{" "}
           </div>
-          <motion.img
-            loading="lazy"
-            whileInView={{ scale: [1.1, 1] }}
-            transition={{ duration: 2 }}
-            src={`${baseUrl}male-firefighter-station-equipped-with-suit-safety-helmet.webp`}
-            alt="Image2"
-          />
+          <div className="h-full overflow-hidden">
+            <motion.img
+              loading="lazy"
+              whileInView={{ scale: [1.1, 1] }}
+              transition={{ duration: 2 }}
+              src={`${baseUrl}male-firefighter-station-equipped-with-suit-safety-helmet.webp`}
+              alt="Image2"
+            />
+          </div>
         </SwiperSlide>{" "}
         <SwiperSlide>
           <div className="Swiper__text">
@@ -76,13 +82,15 @@ const Carousel: React.FC = () => {
               To Ensure Safety.
             </p>{" "}
           </div>
-          <motion.img
-            loading="lazy"
-            whileInView={{ scale: [1.1, 1] }}
-            transition={{ duration: 2 }}
-            src={`${baseUrl}pexels-anna-shvets-5964979.webp`}
-            alt="Image3"
-          />
+          <div className="h-full overflow-hidden">
+            <motion.img
+              loading="lazy"
+              whileInView={{ scale: [1.1, 1] }}
+              transition={{ duration: 2 }}
+              src={`${baseUrl}pexels-anna-shvets-5964979.webp`}
+              alt="Image3"
+            />
+          </div>
         </SwiperSlide>
       </Swiper>
     </section>

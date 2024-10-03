@@ -3,12 +3,14 @@ import PyroLogo from "../../../assets/images/favicon.png";
 import "../style.css";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
-import { FaLinkedin } from "react-icons/fa";
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaLinkedin, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaArrowTurnUp } from "react-icons/fa6";
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
+      <button className="top__btn">
+        <FaArrowTurnUp />
+      </button>
       <div className="navbar__left">
         <img src={PyroLogo} />
         <div className="navbar__right">
@@ -21,12 +23,12 @@ const Navbar: React.FC = () => {
           </div>
           <div className="navbar__text">
             <div className="navbar__heading">
-              <MdOutlineEmail className="navbar__icon" />
+              <MdOutlineEmail className="navbar__icon size-6 lg:size-10" />
               {/* <span>Email</span> */}
               <p className="navbar__subtext">info@pyroshields.com</p>
             </div>
           </div>
-          <div className="navbar__text_">
+          <div className="">
             <div className="navbar__heading_media">
               <a href="https://www.linkedin.com/company/pyroshields/" target="blank" className="navbar__linkedin">
                 <FaLinkedin className="icon" />
