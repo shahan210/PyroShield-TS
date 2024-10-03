@@ -20,7 +20,7 @@
   @apply bg-red-500 p-2 w-fit rounded  text-white;
 }
 .mobile__menu {
-  @apply flex justify-between items-center bg-gradient-to-b from-slate-950 p-2 absolute z-50;
+  @apply flex justify-between items-center sm:hidden bg-gradient-to-b from-slate-950 p-2 absolute z-50;
 }
 .mobile__logo {
   @apply w-3/4;
