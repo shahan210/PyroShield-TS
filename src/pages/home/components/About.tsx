@@ -1,13 +1,22 @@
-import AboutImage from "../../../assets/images/g9.jpg";
 import { motion } from "framer-motion";
+const baseUrl = import.meta.env.VITE_IMAGE_URL;
+
 const About: React.FC = () => {
+  console.log(baseUrl);
+  
   return (
-    <div className="home__about">
+    <section className="home__about">
       <h3 className="sideheading">About</h3>
       <div className="about__content">
-        <div className="about__left">
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2 }}
+          // viewport={{ once: true }}
+          className="about__left"
+        >
           <h1 className="about__title">
-            Best fire Extinguisher
+            Best Fire Extinguisher
             <br /> Supplier In Ajman
           </h1>
           <p className="about__description">
@@ -27,20 +36,26 @@ const About: React.FC = () => {
             <button className="btn-about">Read More</button>
             <button className="btn-contact">Contact Us</button>
           </div>
-        </div>
-        <div className="about__right">
+        </motion.div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="about__right"
+        >
           <div className="about__img">
             <motion.img
               whileHover={{ scale: [1, 1.1] }}
               initial={{ scale: 1 }}
               transition={{ duration: 2 }}
-              src={AboutImage}
+              
+              src={`${baseUrl}g9.webp`}
               alt="Fire Fighter"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

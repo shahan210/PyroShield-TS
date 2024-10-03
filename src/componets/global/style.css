@@ -2,13 +2,13 @@
   @apply transition-all ease-in-out duration-150;
 }
 .navbar {
-  @apply opacity-95 text-black p-2 bg-blue-950;
+  @apply opacity-95 hidden sm:block text-black p-2 bg-blue-950;
 }
 .navbar__left {
   @apply flex justify-between items-center;
 }
 .navbar__left img {
-  @apply w-28 object-contain;
+  @apply lg:w-28 md:w-20 object-contain hidden sm:block;
 }
 .navbar__text {
   @apply text-[#666666] text-lg p-2;
@@ -20,10 +20,10 @@
   @apply size-8 text-red-600;
 }
 .navbar__subtext {
-  @apply text-white text-base px-2;
+  @apply text-white sm:text-sm text-xs lg:text-base px-2;
 }
 .navbar__right {
-  @apply flex gap-10 items-center;
+  @apply flex gap-5 sm:gap-10 items-center;
 }
 .icon {
   @apply size-6;
@@ -38,5 +38,50 @@
   @apply p-2 border border-white rounded-xl cursor-pointer hover:text-white text-white hover:bg-[#0A66C2] hover:border-[#0A66C2] animate;
 }
 .navbar__heading_media {
-  @apply flex gap-5 items-center mr-10;
+  @apply sm:flex hidden gap-5 items-center mr-10;
+}
+.footer {
+  @apply bg-black p-4;
+}
+.footer__content {
+  @apply sm:grid gap-10 lg:grid-cols-5 sm:grid-cols-3 text-white my-10 mx-20 xl:mx-32;
+}
+.footer__about {
+  @apply flex flex-col gap-4 col-span-2;
+}
+.footer__title {
+  @apply text-2xl p-2;
+}
+.footer__description {
+  @apply text-sm p-2 text-[#5C6366];
+}
+.fotter__flex {
+  @apply flex flex-col gap-3;
+}
+.footer__links {
+  @apply footer__description fotter__flex;
+}
+.footer__link {
+  @apply hover:text-[#ED1C24] animate;
+}
+.footer__all {
+  @apply flex gap-3 items-center;
+}
+.footer__media {
+  @apply flex gap-3;
+}
+.media__btn {
+  @apply bg-[#ED1C24] ml-2 p-2 rounded hover:text-black animate;
+}
+.footer__copyright {
+  @apply text-[#5C6366] lg:ml-10 lg:text-sm p-2 flex text-xs sm:flex-row flex-col gap-5 sm:gap-0 justify-between;
+}
+.footer__policy {
+  @apply flex gap-10;
+}
+.terms__policy {
+  @apply hover:text-[#ED1C24] animate hover:underline cursor-pointer;
+}
+.top__btn {
+  @apply fixed bottom-5 right-5 p-3 bg-[#ED1C24] text-white hover:bg-red-700 animate rounded-lg cursor-pointer z-[1000] shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px];
 }

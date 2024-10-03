@@ -1,20 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+
 import "swiper/css";
-import SwiperImage1 from "../../../assets/Webp/3d-rendering-gas-cylinder.webp";
-import SwiperImage2 from "../../../assets/Webp/male-firefighter-station-equipped-with-suit-safety-helmet.webp";
-import SwiperImage3 from "../../../assets/Webp/pexels-anna-shvets-5964979.webp";
 import { motion } from "framer-motion";
 import Logo from "../../../assets/images/pyroshield.png";
+const baseUrl = import.meta.env.VITE_IMAGE_URL;
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdClose } from "react-icons/io";
 const Carousel: React.FC = () => {
+  const [menu, setMenu] = useState(false);
+  const toggleMenu = () => {
+    setMenu(!menu);
+  };
+
   return (
-    <div className="Swiper">
+    <section className="Swiper">
       <div className="Swiper__menu">
         <div className="Swiper__logo">
           <img src={Logo} alt="Pyroshield" />
         </div>
         <div className="Swiper__nav">
+          <a href="#">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div className="mobile__menu">
+        <div className="mobile__logo">
+          <img src={Logo} alt="Pyroshield" />
+        </div>
+        <div className="Swiper__burger">
+          <GiHamburgerMenu className="size-6" onClick={() => toggleMenu()} />
+        </div>
+      </div>
+      <div className={menu ? "Swiper__mobile" : "Swiper__mobile_hide"}>
+        <div className="Swiper__close">
+          <IoMdClose className="size-6" onClick={() => toggleMenu()} />
+        </div>
+        <div className="mobile__nav">
           <a href="#">Home</a>
           <a href="#about">About Us</a>
           <a href="#services">Services</a>
@@ -28,13 +53,12 @@ const Carousel: React.FC = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        navigation={true}
         loop={true}
         modules={[Autoplay]}
         className="mySwiper"
       >
         <SwiperSlide>
-          <motion.div whileInView={{ opacity: [0.5, 1] }} transition={{ duration: 2 }} className="Swiper__text">
+          <div className="Swiper__text">
             <h3 className="Swiper__title">
               Latest Fire <br /> Safety Measures
             </h3>
@@ -42,17 +66,20 @@ const Carousel: React.FC = () => {
               <hr className="w-20 border-2 " />
               To Ensure Safety.
             </p>{" "}
-          </motion.div>
-          <motion.img
-            // loading="lazy"
-            whileInView={{ scale: [1.1, 1] }}
-            transition={{ duration: 2 }}
-            src={SwiperImage1}
-            alt="Image1"
-          />
+          </div>
+          <div className="h-full overflow-hidden">
+            <motion.img
+              loading="lazy"
+              whileInView={{ scale: [1.1, 1] }}
+              transition={{ duration: 2 }}
+              src={`${baseUrl}3d-rendering-gas-cylinder.webp`}
+              className="Swiper__image"
+              alt="Image1"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <motion.div whileInView={{ opacity: [0.5, 1] }} transition={{ duration: 1 }} className="Swiper__text">
+          <div className="Swiper__text">
             <h3 className="Swiper__title">
               Skilled Labors <br /> and Expert Team
             </h3>
@@ -60,17 +87,20 @@ const Carousel: React.FC = () => {
               <hr className="w-20 border-2 " />
               To Ensure Safety.
             </p>{" "}
-          </motion.div>
-          <motion.img
-            // loading="lazy"
-            whileInView={{ scale: [1.1, 1] }}
-            transition={{ duration: 2 }}
-            src={SwiperImage2}
-            alt="Image2"
-          />
-        </SwiperSlide>
+          </div>
+          <div className="h-full overflow-hidden">
+            <motion.img
+              loading="lazy"
+              whileInView={{ scale: [1.1, 1] }}
+              transition={{ duration: 2 }}
+              src={`${baseUrl}male-firefighter-station-equipped-with-suit-safety-helmet.webp`}
+              className="Swiper__image"
+              alt="Image2"
+            />
+          </div>
+        </SwiperSlide>{" "}
         <SwiperSlide>
-          <motion.div whileInView={{ opacity: [0.5, 1] }} transition={{ duration: 1 }} className="Swiper__text">
+          <div className="Swiper__text">
             <h3 className="Swiper__title">
               Regular <br /> Maintenance
             </h3>
@@ -78,17 +108,20 @@ const Carousel: React.FC = () => {
               <hr className="w-20 border-2 " />
               To Ensure Safety.
             </p>{" "}
-          </motion.div>
-          <motion.img
-            // loading="lazy"
-            whileInView={{ scale: [1.1, 1] }}
-            transition={{ duration: 2 }}
-            src={SwiperImage3}
-            alt="Image3"
-          />
+          </div>
+          <div className="h-full overflow-hidden">
+            <motion.img
+              className="Swiper__image"
+              loading="lazy"
+              whileInView={{ scale: [1.1, 1] }}
+              transition={{ duration: 2 }}
+              src={`${baseUrl}pexels-anna-shvets-5964979.webp`}
+              alt="Image3"
+            />
+          </div>
         </SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
 

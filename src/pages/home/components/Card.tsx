@@ -1,16 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
 type Props = {
   image: string;
   desc: string;
 };
-import { motion } from "framer-motion";
 const Card: React.FC<Props> = ({ image, desc }) => {
   return (
     <div className="services__card">
       <motion.img
         initial={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
-        loading="lazy"
         transition={{ duration: 2 }}
         src={image}
         alt={desc}

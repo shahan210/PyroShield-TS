@@ -2,16 +2,40 @@
   @apply transition-all ease-in-out duration-200 delay-75;
 }
 .Swiper {
-  @apply w-full h-[700px] overflow-hidden relative mb-10;
+  @apply w-full h-[680px] sm:h-[450px] lg:h-[700px] overflow-hidden relative mb-10 z-10;
 }
 .Swiper__menu {
-  @apply absolute p-2 flex justify-between w-full z-50 h-fit bg-gradient-to-b from-slate-950 items-center;
+  @apply absolute p-2 hidden sm:flex justify-between w-full z-20 h-fit bg-gradient-to-b from-slate-950 items-center;
+}
+.Swiper__mobile {
+  @apply fixed py-20 top-0 right-0 w-full duration-500 transition-all  sm:hidden z-[10000000] bg-opacity-95 bg-blue-950 text-white h-full items-center;
+}
+.Swiper__close {
+  @apply p-2 absolute top-2 right-5;
+}
+.Swiper__mobile_hide {
+  @apply fixed py-20 top-0 right-0 w-0 -mr-32 duration-500 transition-all sm:hidden z-[10000000] bg-opacity-90  bg-blue-950 text-white h-full items-center;
+}
+.Swiper__burger {
+  @apply bg-red-500 p-2 w-fit rounded  text-white;
+}
+.mobile__menu {
+  @apply flex justify-between items-center bg-gradient-to-b from-slate-950 p-2 absolute z-50;
+}
+.mobile__logo {
+  @apply w-3/4;
+}
+.Swiper__image {
+  @apply h-[680px] sm:h-full object-cover w-full;
+}
+.mobile__nav {
+  @apply flex flex-col sm:hidden gap-10 mr-5 justify-center items-center lg:mr-20;
 }
 .Swiper__logo {
-  @apply ml-32 w-[25%];
+  @apply ml-5 lg:ml-32 w-[25%];
 }
 .Swiper__nav {
-  @apply flex gap-10 mr-20 text-white;
+  @apply flex gap-10 mr-5 lg:mr-20 text-white;
 }
 .Swiper__nav a {
   @apply text-base hover:text-[#ED1C24] transition-all ease-in-out duration-150 hover:scale-105;
@@ -20,22 +44,22 @@
   @apply absolute top-[30%] left-[25%] h-full text-gray-100 z-[100] w-[50%];
 }
 .Swiper__title {
-  @apply text-8xl font-bold;
+  @apply text-5xl sm:text-6xl lg:text-8xl font-bold;
 }
 .Swiper__subtitle {
-  @apply mt-4 text-3xl font-semibold flex items-center gap-2;
+  @apply mt-4  text-xl sm:text-3xl font-semibold flex items-center gap-2;
 }
 .home__contents {
-  @apply my-20 w-[75%] mx-auto;
+  @apply my-5 sm:my-20 w-[90%] xl:w-[75%] mx-auto;
 }
 .home__about {
-  @apply my-20;
+  @apply my-5 sm:my-20;
 }
 .sideheading {
   @apply uppercase text-sm underline-offset-8 underline text-[#ED1C24];
 }
 .about__content {
-  @apply grid grid-cols-2 gap-10 my-10;
+  @apply lg:grid lg:grid-cols-2 flex flex-col gap-10 my-10;
 }
 .about__left {
   @apply flex flex-col gap-5;
@@ -47,7 +71,7 @@
   @apply text-base text-gray-500;
 }
 .about__button {
-  @apply flex justify-start gap-5;
+  @apply flex justify-start sm:flex-row flex-col gap-5;
 }
 .btn-about {
   @apply px-8 py-4 bg-[#ED1C24] text-white border border-[#ED1C24] text-base rounded hover:bg-red-500 animate;
@@ -66,10 +90,10 @@
 }
 
 .home__services {
-  @apply mt-32;
+  @apply mt-20 sm:mt-32;
 }
 .services__content {
-  @apply grid grid-cols-3 gap-10;
+  @apply lg:grid lg:grid-cols-3 flex flex-col gap-10;
 }
 .services__card {
   @apply bg-white mt-10 rounded-lg hover:shadow-xl overflow-hidden relative;
@@ -81,13 +105,13 @@
   @apply p-2 text-sm font-semibold absolute bottom-0 text-center bg-black bg-opacity-40 w-full text-white;
 }
 .home__quality {
-  @apply bg-gray-100 my-20 flex justify-center;
+  @apply bg-gray-100 mt-20 flex justify-center;
 }
 .quality__container {
-  @apply max-w-[75%] mt-20;
+  @apply xl:max-w-[75%] w-[90%] mt-20;
 }
 .quality__content {
-  @apply grid grid-cols-2 mt-10 gap-10;
+  @apply lg:grid lg:grid-cols-2 flex flex-col mt-10 gap-10;
 }
 .quality__subtitle {
   @apply text-xl font-semibold;
@@ -102,8 +126,39 @@
   @apply px-8 py-4 bg-[#ED1C24] text-white  border border-[#ED1C24] text-base rounded hover:bg-white hover:text-[#ED1C24] hover:scale-105 animate w-fit mb-24;
 }
 .quality__right {
-  @apply grid grid-cols-2 gap-5 p-2 ;
+  @apply grid grid-cols-2 gap-5 p-2;
 }
 .quality__right img {
   @apply w-full h-full object-cover rounded-lg items-center;
+}
+.service__more {
+  @apply flex justify-center items-center p-2 mt-5;
+}
+.service__more button {
+  @apply px-8 py-4 mt-5 bg-white text-[#ED1C24] text-base rounded border border-[#ED1C24] hover:bg-[#ED1C24] hover:text-white animate;
+}
+.join__content {
+  @apply sm:grid sm:grid-cols-2 flex flex-col gap-10;
+}
+.join__left {
+  @apply sm:ml-5 ml-1 lg:ml-32 p-2 justify-center flex flex-col gap-5 mt-10;
+}
+.join__subtitle {
+  @apply text-gray-500 text-xl;
+}
+
+.subscribe {
+  @apply flex w-full flex-col gap-5 pt-2 mt-5;
+}
+.join__right {
+  @apply h-full;
+}
+.join__right img {
+  @apply w-full h-full object-cover;
+}
+.form__input {
+  @apply p-4 outline-none border rounded border-gray-300;
+}
+.form__btn {
+  @apply px-8 py-4 bg-orange-300 text-white  border border-orange-300 text-base rounded mb-10;
 }

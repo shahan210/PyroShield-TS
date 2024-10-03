@@ -1,13 +1,17 @@
 // import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Index from "./pages/home/Index";
-import Navbar from "./componets/global/Navbar";
+import Layout from "./componets/global/Layout";
+import { GlobalProvider } from "./componets/global/GlobalContext";
 function App() {
   return (
     <div>
-      <Navbar />
-      <div className="min-w-h-screen ">
-        <Index />
-      </div>
+      <GlobalProvider>
+        <Layout>
+          <div className="min-w-h-screen ">
+            <Index />
+          </div>
+        </Layout>
+      </GlobalProvider>
     </div>
   );
 }
