@@ -5,7 +5,9 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { motion } from "framer-motion";
 import Logo from "../../../assets/images/pyroshield.png";
-const baseUrl = import.meta.env.VITE_IMAGE_URL;
+import Image1 from "../../../assets/images/3d-rendering-gas-cylinder.jpg";
+import Image2 from "../../../assets/images//male-firefighter-station-equipped-with-suit-safety-helmet.jpg";
+import Image3 from "../../../assets/images/pexels-anna-shvets-5964979.jpg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 const Carousel: React.FC = () => {
@@ -72,7 +74,7 @@ const Carousel: React.FC = () => {
               loading="lazy"
               whileInView={{ scale: [1.1, 1] }}
               transition={{ duration: 2 }}
-              src={`${baseUrl}3d-rendering-gas-cylinder.webp`}
+              src={Image1}
               className="Swiper__image"
               alt="Image1"
             />
@@ -93,7 +95,7 @@ const Carousel: React.FC = () => {
               loading="lazy"
               whileInView={{ scale: [1.1, 1] }}
               transition={{ duration: 2 }}
-              src={`${baseUrl}male-firefighter-station-equipped-with-suit-safety-helmet.webp`}
+              src={Image2}
               className="Swiper__image"
               alt="Image2"
             />
@@ -115,7 +117,7 @@ const Carousel: React.FC = () => {
               loading="lazy"
               whileInView={{ scale: [1.1, 1] }}
               transition={{ duration: 2 }}
-              src={`${baseUrl}pexels-anna-shvets-5964979.webp`}
+              src={Image3}
               alt="Image3"
             />
           </div>

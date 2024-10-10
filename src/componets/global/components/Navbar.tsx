@@ -4,13 +4,11 @@ import "../style.css";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaLinkedin, FaFacebookF, FaInstagram } from "react-icons/fa";
-import { FaArrowTurnUp } from "react-icons/fa6";
+import ScrollUp from "./ScrollUp";
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
-      <button className="top__btn">
-        <FaArrowTurnUp />
-      </button>
+      <ScrollUp />
       <div className="navbar__left">
         <img src={PyroLogo} />
         <div className="navbar__right">
