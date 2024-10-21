@@ -3,6 +3,7 @@ import { GlobalProvider } from "./componets/global/GlobalContext";
 import Layout from "./componets/global/Layout";
 import About from "./pages/aboutUs/Index";
 import Home from "./pages/home/Index";
+import Services from "./pages/services/Index";
 function App() {
   return (
     <div>
@@ -12,6 +13,7 @@ function App() {
             <Routes>
               <Route index element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/services" element={<Services />} />
             </Routes>
           </BrowserRouter>
         </Layout>

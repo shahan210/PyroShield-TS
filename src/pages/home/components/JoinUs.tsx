@@ -2,7 +2,6 @@ import React from "react";
 import "../style.css";
 // import JoinImage from "../../../assets/Webp/professional.webp";
 import { motion } from "framer-motion";
-const baseUrl = import.meta.env.VITE_IMAGE_URL;
 
 const JoinUs: React.FC = () => {
   return (

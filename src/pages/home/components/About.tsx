@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
-const baseUrl = import.meta.env.VITE_IMAGE_URL;
 
 const About: React.FC = () => {
-  console.log(baseUrl);
 
   return (
     <section className="home__about">

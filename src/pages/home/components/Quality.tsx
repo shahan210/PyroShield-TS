@@ -5,7 +5,6 @@ import "../style.css";
 // import Image3 from "../../../assets/Webp/fire3.webp";
 // import Image4 from "../../../assets/Webp/fire1.webp";
 import { motion } from "framer-motion";
-const baseUrl = import.meta.env.VITE_IMAGE_URL;
 
 const Quality: React.FC = () => {
   return (
