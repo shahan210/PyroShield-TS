@@ -44,7 +44,7 @@ const About: React.FC = () => {
           className="about__right"
         >
           <div className="about__img">
-            <img src={`${baseUrl}g9.webp`} alt="Fire Fighter" />
+            <img src={`https://res.cloudinary.com/dfd7rlncm/image/upload/v1729501403/g9_nfuhjl.webp`} alt="Fire Fighter" />
           </div>
         </motion.div>
       </div>

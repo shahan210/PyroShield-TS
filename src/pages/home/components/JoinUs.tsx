@@ -27,7 +27,7 @@ const JoinUs: React.FC = () => {
           </form>
         </div>
         <div className="join__right">
-          <img src={`${baseUrl}professional.webp`} alt="professionals" />
+          <img loading="lazy" src={`https://res.cloudinary.com/dfd7rlncm/image/upload/v1729501406/professional_oqj0bl.webp`} alt="professionals" />
         </div>
       </div>
     </motion.section>

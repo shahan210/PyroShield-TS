@@ -37,10 +37,26 @@ const Quality: React.FC = () => {
             transition={{ duration: 2 }}
             className="quality__right"
           >
-            <img src={`${baseUrl}g9.webp`} alt="Fire fighter" />
-            <img src={`${baseUrl}fire-alarm-switch.webp`} alt="Fire-switch" />
-            <img src={`${baseUrl}fire3.webp`} alt="Fire fighting" />
-            <img src={`${baseUrl}fire1.webp`} alt="Fire extinghuisher" />
+            <img
+              loading="lazy"
+              src={`https://res.cloudinary.com/dfd7rlncm/image/upload/v1729501403/g9_nfuhjl.webp`}
+              alt="Fire fighter"
+            />
+            <img
+              loading="lazy"
+              src={`https://res.cloudinary.com/dfd7rlncm/image/upload/v1729501403/fire-alarm-switch_awk46v.webp`}
+              alt="Fire-switch"
+            />
+            <img
+              loading="lazy"
+              src={`https://res.cloudinary.com/dfd7rlncm/image/upload/v1729501403/fire3_k2rsok.webp`}
+              alt="Fire fighting"
+            />
+            <img
+              loading="lazy"
+              src={`https://res.cloudinary.com/dfd7rlncm/image/upload/v1729501402/fire1_izdikr.webp`}
+              alt="Fire extinghuisher"
+            />
           </motion.div>
         </div>
         <a href="">

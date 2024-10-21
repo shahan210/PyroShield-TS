@@ -8,8 +8,8 @@ import Quality from "./components/Quality";
 import JoinUs from "./components/JoinUs";
 const Index: React.FC = () => {
   return (
-    <div className="">
-      <Carousel />
+    <div className="min-w-h-screen">
+      <Carousel home page=""/>
       <div className="home__contents">
         <About />
         <Services />

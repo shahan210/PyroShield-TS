@@ -1,8 +1,11 @@
 .animate {
   @apply transition-all ease-in-out duration-200 delay-75;
 }
-.Swiper {
+.Swiper_home {
   @apply w-full h-[680px] sm:h-[450px] lg:h-[700px] overflow-hidden relative mb-10 z-10;
+}
+.Swiper__page {
+  @apply w-full h-[400px] sm:h-[280x] lg:h-[280px] overflow-hidden relative mb-10 z-10;
 }
 .Swiper__menu {
   @apply absolute p-2 hidden sm:flex justify-between w-full z-20 h-fit bg-gradient-to-b from-slate-950 items-center;
@@ -12,6 +15,15 @@
 }
 .Swiper__close {
   @apply p-2 absolute top-2 right-5;
+}
+.page__image {
+  @apply relative w-full h-full;
+}
+.page__content {
+  @apply absolute inset-0 bg-black bg-opacity-70 flex justify-center items-center;
+}
+.page__nav {
+  @apply p-2 bg-white bg-opacity-15 absolute top-1/2 rounded right-[46%] flex gap-2 text-white;
 }
 .Swiper__mobile_hide {
   @apply fixed py-20 top-0 right-0 w-0 -mr-32 duration-500 transition-all sm:hidden z-[10000000] bg-opacity-90  bg-blue-950 text-white h-full items-center;
