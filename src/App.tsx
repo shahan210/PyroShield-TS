@@ -1,15 +1,19 @@
-// import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Index from "./pages/home/Index";
-import Layout from "./componets/global/Layout";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { GlobalProvider } from "./componets/global/GlobalContext";
+import Layout from "./componets/global/Layout";
+import About from "./pages/aboutUs/Index";
+import Home from "./pages/home/Index";
 function App() {
   return (
     <div>
       <GlobalProvider>
         <Layout>
-          <div className="min-w-h-screen ">
-            <Index />
-          </div>
+          <BrowserRouter>
+            <Routes>
+              <Route index element={<Home />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </BrowserRouter>
         </Layout>
       </GlobalProvider>
     </div>

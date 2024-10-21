@@ -3,7 +3,7 @@ const baseUrl = import.meta.env.VITE_IMAGE_URL;
 
 const About: React.FC = () => {
   console.log(baseUrl);
-  
+
   return (
     <section className="home__about">
       <h3 className="sideheading">About</h3>
@@ -44,14 +44,7 @@ const About: React.FC = () => {
           className="about__right"
         >
           <div className="about__img">
-            <motion.img
-              whileHover={{ scale: [1, 1.1] }}
-              initial={{ scale: 1 }}
-              transition={{ duration: 2 }}
-              
-              src={`${baseUrl}g9.webp`}
-              alt="Fire Fighter"
-            />
+            <img src={`https://res.cloudinary.com/dfd7rlncm/image/upload/v1729501403/g9_nfuhjl.webp`} alt="Fire Fighter" />
           </div>
         </motion.div>
       </div>

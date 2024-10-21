@@ -44,7 +44,7 @@
   @apply bg-black p-4;
 }
 .footer__content {
-  @apply sm:grid gap-10 lg:grid-cols-5 sm:grid-cols-3 text-white my-10 mx-20 xl:mx-32;
+  @apply sm:grid gap-10 lg:grid-cols-5 sm:grid-cols-3 text-white my-10 sm:mx-20 xl:mx-32;
 }
 .footer__about {
   @apply flex flex-col gap-4 col-span-2;
@@ -84,4 +84,10 @@
 }
 .top__btn {
   @apply fixed bottom-5 right-5 p-3 bg-[#ED1C24] text-white hover:bg-red-700 animate rounded-lg cursor-pointer z-[1000] shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px];
+}
+.scroll__show {
+  @apply visible opacity-100 animate;
+}
+.scroll__hide {
+  @apply  invisible opacity-0 animate;
 }
