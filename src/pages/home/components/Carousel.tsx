@@ -7,7 +7,6 @@ import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Logo from "../../../assets/images/pyroshield.png";
-const baseUrl = import.meta.env.VITE_IMAGE_URL;
 
 type Props = {
   home: boolean;
@@ -54,16 +53,16 @@ const Carousel: React.FC<Props> = ({ home, page }) => {
           <IoMdClose className="size-6" onClick={() => toggleMenu()} />
         </div>
         <div className="mobile__nav">
-          <a href="/">Home</a>
-          <a href="/about">About Us</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/contact">Contact</Link>
         </div>
       </div>
       <div className={home ? "hidden" : "page__image"}>
         <div className="page__content"></div>
         <img
-          src={`${baseUrl}safety-extinguisher-instrument-utility-faucet.webp`}
+          src={`https://res.cloudinary.com/dfd7rlncm/image/upload/v1729501406/safety-extinguisher-instrument-utility-faucet_v9xjxv.webp`}
           alt="safety-extinguisher-instrument-utility-faucet"
         />
         <div className="page__nav">

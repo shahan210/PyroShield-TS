@@ -1,0 +1,25 @@
+.about__about {
+  @apply my-10 sm:my-20 flex justify-center;
+}
+.about__contents {
+  @apply max-w-[80%] sm:grid sm:grid-cols-2 flex gap-5 flex-col sm:gap-10;
+}
+.wwoffer {
+  @apply mt-20 xl:grid xl:grid-cols-2;
+}
+.wwoffer__img {
+  @apply w-full h-full hover:shadow-xl transition-all ease-in-out duration-150 overflow-hidden;
+}
+.wwoffer__img img {
+  @apply cursor-pointer object-fill sm:object-none h-full ;
+}
+.wwoffer__content {
+@apply flex flex-col gap-5 bg-[#F6F6F6] p-14 ;
+}
+.wwoffer__subcontents{
+  @apply sm:grid sm:grid-cols-2 flex flex-col gap-5;
+} 
+.subcontent__title{
+  @apply text-2xl font-semibold hover:text-red-500 transition-all ease-in-out duration-200 cursor-pointer my-5;
+}
+
