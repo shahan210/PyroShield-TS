@@ -6,17 +6,17 @@ const Links: React.FC = () => {
       <h1 className="footer__title">Links</h1>
       <ol className="footer__links">
         <li>
-          <a className="footer__link" href="#home">
+          <a className="footer__link" href="/">
             Home
           </a>
         </li>
         <li>
-          <a className="footer__link" href="#about">
+          <a className="footer__link" href="/about">
             About Us
           </a>
         </li>
         <li>
-          <a className="footer__link" href="#Services">
+          <a className="footer__link" href="/services">
             Services
           </a>
         </li>
@@ -26,7 +26,7 @@ const Links: React.FC = () => {
           </a>
         </li>
         <li>
-          <a className="footer__link" href="#Contact">
+          <a className="footer__link" href="/contact">
             Contact
           </a>
         </li>
