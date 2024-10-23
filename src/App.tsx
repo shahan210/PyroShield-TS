@@ -4,6 +4,7 @@ import Layout from "./componets/global/Layout";
 import About from "./pages/aboutUs/Index";
 import Home from "./pages/home/Index";
 import Services from "./pages/services/Index";
+import Contact from "./pages/contact/Index";
 function App() {
   return (
     <div>
@@ -14,6 +15,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </BrowserRouter>
         </Layout>

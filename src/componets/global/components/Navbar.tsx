@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
             <div className="navbar__heading">
               <IoCall className="navbar__icon" />
               {/* <span>Call Us</span> */}
-              <p className="navbar__subtext">+971 54 541 8559, +971 6678 5591</p>
+              <p className="navbar__subtext">+971 54 541 8559, +971 (06) 678 5591</p>
             </div>
           </div>
           <div className="navbar__text">
